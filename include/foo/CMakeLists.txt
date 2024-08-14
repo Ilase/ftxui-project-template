@@ -4,7 +4,7 @@ project(
 )
 set(
     SOURCE_LIB
-    foo.cpp
+    ../../src/foo.cpp
 )
 add_library(
     foo STATIC ${SOURCE_LIB}
