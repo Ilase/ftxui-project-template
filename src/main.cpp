@@ -1,7 +1,4 @@
-
-// dom
 #include <ftxui/dom/elements.hpp>
-// component
 #include <ftxui/component/component.hpp>
 #include <ftxui/component/component_options.hpp>
 #include <ftxui/component/component_base.hpp>
@@ -11,12 +8,7 @@
 using namespace ftxui;
 
 int main(){
-    //auto main_window = Container::Horizontal({});
-    // auto renderer = Renderer(main_window, [&]{
-        
-    // });
-    //auto screen = Screen::Create(Dimension::Full(),Dimension::Full());
-    auto screen = ScreenInteractive::Fullscreen();
+    auto screen = ScreenInteractive::FitComponent();
     auto render_space = Renderer( [&] {
             return vbox({
                 text("hello niger") ,
